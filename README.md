@@ -7,5 +7,5 @@ Reference: https://vtu.ac.in/wp-content/uploads/2019/12/becbcs2017-18.pdf
 
 Run below command in cmd:
 ```
-  python [filepath]/VTU_SGPA_or_CGPA_Calculator.py
+> python [filepath]/VTU_SGPA_or_CGPA_Calculator.py
 ```
