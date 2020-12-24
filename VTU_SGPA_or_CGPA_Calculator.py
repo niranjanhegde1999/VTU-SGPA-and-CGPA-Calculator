@@ -112,7 +112,7 @@ class SGPA:
             self.grade_points.append(6)
         elif marks >= 45:
             self.grade_points.append(5)    
-        elif marks >= 43:
+        elif marks >= 40:
             self.grade_points.append(4)
         else:
             self.grade_points.append(0)
