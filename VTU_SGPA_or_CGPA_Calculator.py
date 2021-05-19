@@ -108,10 +108,8 @@ class SGPA:
             self.grade_points.append(8)
         elif marks >= 60:
             self.grade_points.append(7)
-        elif marks >= 50:
-            self.grade_points.append(6)
         elif marks >= 45:
-            self.grade_points.append(5)    
+            self.grade_points.append(6)    
         elif marks >= 40:
             self.grade_points.append(4)
         else:
@@ -293,7 +291,7 @@ class CGPA:
         for i in range(len(self.sgpa_list)):
             print('|', end = " ")
             print(str(i+1).rjust(5) + '|'.rjust(5) , end = "")
-            print(str(self.sgpa_list[i]).rjust(5) + '|'.rjust(2) , end = " ")
+            print(str('{:.2f}'.format(self.sgpa_list[i])).rjust(5) + '|'.rjust(2) , end = " ")
             print(str(self.credit_points_list[i]).rjust(7) + '|'.rjust(7))
 
         print('-' * 34)
@@ -333,7 +331,7 @@ if __name__ == '__main__':
             sgpa.dispaly()
 
             #Exit program
-            exit(1)
+            quit()
 
         #Create objet for sgpa if user want to calculate CGPA
         elif choice == 'cgpa':
@@ -347,11 +345,11 @@ if __name__ == '__main__':
             cgpa.dispaly()
 
             #Exit program
-            exit(1)
+            quit()
         
         #Exit program if choice is exit
         elif choice == 'exit':
             print("Exiting the Program...")
-            exit(1)
+            quit()
         else:
             print('Invalid Input...')
